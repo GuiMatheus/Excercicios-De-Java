@@ -1,5 +1,7 @@
 package Family28;
 
+import java.util.Scanner;
+
 public class testando {
 
 	public static void main(String[] args) {
@@ -20,7 +22,7 @@ public class testando {
 		for(x=0;x<4;x++)
 		{
 			
-			System.out.println("\nEntre com a sua média: ");
+			System.out.println("\nEntre com a sua nota: ");
 			media[x] = leia.nextFloat();
 			
 			somamedia = somamedia + media[x];
