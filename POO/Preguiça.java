@@ -7,10 +7,10 @@ public class Preguiça extends Animal {
 	private String humor;
 	private String tamanho;
 	
-	public Preguiça (String nome, int idade, String somEmitido, String pelo, 
+	public Preguiça (String nome, int idade, String pelo, 
 			String instinto, String gosto, String humor, String tamanho)
 	{
-		super (nome, idade, somEmitido, pelo, instinto);
+		super (nome, idade, pelo, instinto);
 		this.gosto = gosto;
 		this.humor = humor;
 		this.tamanho = tamanho;
@@ -42,8 +42,16 @@ public class Preguiça extends Animal {
 	
 	public void ImprimirInfo()
 	{
-		System.out.println("\nA " + getNome() + " tem " + getIdade() + " anos de idade  e emite " + getSomEmitido() //balidos
-		+ " quando se sente ameaçado, seu " + getPelo() + " ajuda a proteger do mal tempo," +  " \ncostumar ser " + getInstinto() + 
-		" adora comer " + gosto + " e " + humor + " quando esta no seu habitat" + " \ne costuma ser " + tamanho );
+		System.out.println("\nNome da preguiça é: " + getNome() + "\nPossui " + getIdade() + " anos de idade " +   "\nSeu " + getPelo() + " ajuda a proteger do mal tempo." +  " \nCostumar ser " + getInstinto() + 
+		"\nAdora comer " + gosto + "\nSe sente " + humor + " quando esta no seu habitat" + " \nE costuma ser " + tamanho  );
 	}
+	@Override
+	public void som(){
+		System.out.println("Bali assim: ....!!!");
+	}
+	@Override
+	public void corre()  {
+		System.out.println("Se locomove: Subindo arvores");
+	
+}
 }
